@@ -44,6 +44,9 @@ export OPENAI_API_KEY=xxx
 docker run --rm --name openui -p 7878:7878 -e OPENAI_API_KEY -e ANTHROPIC_API_KEY -e OLLAMA_HOST=http://host.docker.internal:11434 ghcr.io/wandb/openui
 ```
 
+```bash
+docker run --rm --name openui -p 7878:7878 -e OPENAI_API_KEY -e GEMINI_API_KEY -e OLLAMA_HOST=http://host.docker.internal:11434 ghcr.io/wandb/openui
+```
 Now you can goto [http://localhost:7878](http://localhost:7878) and generate new UI's!
 
 ### From Source / Python
